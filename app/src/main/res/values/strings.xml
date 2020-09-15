@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Jet2TTInterview</string>
+    <string name="seconds_ago">%1$d Seconds</string>
+    <string name="month_ago">%1$d Months</string>
+    <string name="min_ago">%1$d min</string>
+    <string name="hour_ago">%1$d hr</string>
+    <string name="year_ago">%1$d week</string>
+    <string name="week_ago">%1$d week</string>
+    <string name="days_ago">%1$d days</string>
+    <string name="likes">%.1f Likes</string>
+    <string name="comments">%1$d Comments</string>
+</resources>

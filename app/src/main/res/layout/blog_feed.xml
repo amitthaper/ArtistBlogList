@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_percent="0.22">
+
+        <com.sample.jet2ttinterview.view.CircularImageView
+            android:id="@+id/image_view_blog_feed_user_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/text_view_blog_feed_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/image_view_blog_feed_user_pic"
+            android:layout_toRightOf="@id/image_view_blog_feed_user_pic"
+            android:text="Amit Thaper" />
+
+        <TextView
+            android:id="@+id/text_view_blog_feed_user_designation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_blog_feed_user_name"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/image_view_blog_feed_user_pic"
+            android:layout_toRightOf="@id/image_view_blog_feed_user_pic"
+            android:text="Software Engineer" />
+
+        <TextView
+            android:id="@+id/text_view_blog_feed_updated_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="1 min" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image_view_blog_feed_media_pic"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_launcher_background"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHeight_percent="0.30"
+        app:layout_constraintTop_toBottomOf="@+id/top_layout" />
+
+    <TextView
+        android:id="@+id/text_view_blog_feed_description"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="jldfjdlfjdlfjdlfjdlfjdljfdljf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHeight_percent="0.20"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_blog_feed_media_pic" />
+    <TextView
+        android:id="@+id/text_view_blog_feed_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Article Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_blog_feed_description" />
+    <TextView
+        android:id="@+id/text_view_blog_feed_url"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:text="Article URL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_blog_feed_title" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHeight_percent="0.01"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_blog_feed_url">
+
+        <Button
+            android:id="@+id/text_view_blog_feed_likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/transparent"
+            android:layout_alignParentLeft="true"
+            android:textAllCaps="false"
+            android:text="4.5K Likes" />
+
+        <Button
+            android:id="@+id/text_view_blog_feed_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textAllCaps="false"
+            android:background="@android:color/transparent"
+            android:text="30K Comments" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
